@@ -33,10 +33,6 @@ header .container {
     z-index: 10000;
 }
 
-header .sticky {
-
-}
-
 header .logo {
     margin: 0 35px 0 50px;
     width: 8vw;
@@ -173,3 +169,26 @@ main .filme-principal .botao-2{
     width: 70%;
 }
 
+/* SECÃO */
+
+section .box-filme {
+    display: inline-block;
+    cursor: pointer;
+}
+
+section .carrosel-filmes {
+    margin-top: 40px;
+}
+
+ section h2 {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+section .filmes-secundarios {
+    margin-left: 50px;
+}
+
+section .item img {
+    border-radius: 4px;
+}
