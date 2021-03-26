@@ -3,7 +3,7 @@
     --preto: #141414;
 }
 
-body, header, div, img, p, a, h1, h2 {
+body, div, img, p, a, h1, h2 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,7 +22,7 @@ header {
     position: fixed;
     width: 100vw;
     z-index: 10000;
-    transition: all ease .3s;
+    transition: 1s;
 }
 
 header .container {
@@ -31,6 +31,11 @@ header .container {
     justify-content: flex-start;
     background-color: transparent;
     z-index: 10000;
+}
+
+header.sticky {
+    background-color: var(--preto);
+    transition: 1s;
 }
 
 header .logo {
@@ -97,7 +102,7 @@ header .right:nth-child(5){
 main .filme-principal {
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/filme-principal.jpg');
     -webkit-mask-image: linear-gradient(to top, #00000000 1%, var(--preto) 10%);
-
+ 
     height: 710px;
     background-size: cover;
     

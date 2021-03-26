@@ -113,10 +113,18 @@
     </div>
 </section>
 
-</body>
+<script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+    });
+</script>
 
 <script src="https://kit.fontawesome.com/6bca39650c.js" crossorigin="anonymous"></script>
 <script src="Script/owl/jquery.min.js"></script>
 <script src="Script/owl/owl.carousel.min.js"></script>
 <script src="Script/owl/setup.js"></script>
+
+</body>
+
 </html>
