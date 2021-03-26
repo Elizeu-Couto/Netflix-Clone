@@ -1,0 +1,98 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+body, header, div, img, p, a, h1, h2 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--preto);
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+/* CABEÇALHO */
+
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 10000;
+    transition: all ease .3s;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+    z-index: 10000;
+}
+
+header .sticky {
+
+}
+
+header .logo {
+    margin: 0 35px 0 50px;
+    width: 8vw;
+}
+
+header .nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a {
+    color: #fff;
+    font-size: 0.9em;
+}
+
+header nav .left {   
+    margin: 10px;
+}
+
+header nav .div-right {
+    display: flex;
+    padding-right: 50px;
+}
+
+header nav .div-right .right {
+    margin: 10px 15px;
+}
+
+header div a:hover {
+    color: #AAA;
+}
+
+header .left:nth-child(1) {
+    font-weight: bold;
+}
+
+header .right:nth-child(2n+1){
+    font-size: 1.2em;
+    align-self: center;
+}
+
+header .right:nth-child(2){
+    align-self: center;
+}
+
+header .right:nth-child(2n+4){
+    font-size: 1.4em;
+    align-self: center;
+} 
+
+header .right:nth-child(5){
+    width: 2.3vw;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
